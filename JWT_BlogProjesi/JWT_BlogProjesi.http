@@ -1,0 +1,6 @@
+@JWT_BlogProjesi_HostAddress = http://localhost:5063
+
+GET {{JWT_BlogProjesi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

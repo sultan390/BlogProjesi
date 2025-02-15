@@ -1,0 +1,42 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Category>
+
+<div class="tech-btm">
+    <h4>KATEGORİLER</h4>
+    <ul class="list-group single">
+        @foreach (var item in Model)
+        {
+
+             <li class="list-group-item d-flex justify-content-between align-items-center" title="@item.CategoryDescription">
+                <a class="categoryLink" href="/Blog/Index/?id=@item.CategoryID" name="@item.CategoryID" style="color:#01cd74;">
+                    @item.CategoryName
+                    <span class="badge badge-primary badge-pill"></span>
+                </a>
+
+            </li>
+
+        }
+
+
+    </ul>
+</div>
+
+
+
+@* 
+
+            <li>
+                <a href="/Blog/Index?id=@item.CategoryID">
+                    <i class="fa fa-bars"></i> @item.CategoryName
+                </a>
+            </li>
+
+
+                <h5 class="card-title">
+                                    <a href="/Blog/BlogReadAll/@item.BlogID">@item.BlogTitle</a>
+                                </h5>
+            <a href="/Blog/BlogReadAll/@item.BlogID/" class="btn btn-primary read-m">Devamını Oku</a> 
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                @item.CategoryName
+                <span class="badge badge-primary badge-pill">0</span>
+            </li> *@

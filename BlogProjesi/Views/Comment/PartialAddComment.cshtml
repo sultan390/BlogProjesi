@@ -1,0 +1,16 @@
+﻿
+
+<div class="comment-top">
+    <h4>Yorum Ekleyin</h4>
+    <div class="comment-bottom">
+        <form method="post" asp-action="PartialAddComment" asp-action="Comment">
+            <input class="form-control" type="text" name="CommentuserName" placeholder="Adınız Soyadınız" required="">
+            <input class="form-control" type="text" name="CommentTittle" placeholder="Konu" required="">
+
+
+            <textarea class="form-control" name="CommentContent" placeholder="Yorumunuz" name="CommentContent" required=""></textarea>
+            <button type="submit" class="btn btn-primary submit">Yorum Yap</button>
+        </form>
+    </div>
+</div>
+
